@@ -16,4 +16,7 @@ Food Point of Sales System.
   - Add all items to cart
   - Confirm the items on cart and go to payment
   - After payment, the sell status is ready to cook
-
+- Client staff opens store
+  - Page confirms all menu items available and theirs stock if it is enable
+- Client staff closes store
+  - Page confirms all sales of the day
