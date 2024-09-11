@@ -17,4 +17,3 @@ Food Point of Sales System.
   - Confirm the items on cart and go to payment
   - After payment, the sell status is ready to cook
 
-
