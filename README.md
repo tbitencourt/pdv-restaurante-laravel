@@ -18,5 +18,3 @@ Food Point of Sales System.
   - After payment, the sell status is ready to cook
 
 
-
-
