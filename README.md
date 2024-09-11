@@ -20,3 +20,16 @@ Food Point of Sales System.
   - Page confirms all menu items available and theirs stock if it is enable
 - Client staff closes store
   - Page confirms all sales of the day
+
+## Pending Tasks
+
+- Add company fields (ex: CNPJ) to Organization Model/migration
+- Install Filament
+- Add multi-tenancy rules
+- Update register user page
+- Create Menu/MenuItem CRUD pages
+- Add Open/Close Store features
+- Add attendance flow pages
+- Add payment features
+- Add stock features
+- Add Client Admin reports
