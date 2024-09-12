@@ -8,9 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
+/**
+ * @property int $id
+ * @property int $created_by
+ */
 class Menu extends Model
 {
     use HasFactory;
+
+    public static function boot(): void
+    {
+        parent::boot();
+        if (auth()->user()) {
+            static::saving(function ($model) {
+                $model->created_by = auth()->id();
+            });
+        }
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -22,6 +36,7 @@ class Menu extends Model
         'description',
         'status',
         'active',
+        'created_by',
     ];
 
     /**
@@ -43,7 +58,7 @@ class Menu extends Model
 
     public function createdBy(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'created_by');
     }
 
     public function items(): HasMany

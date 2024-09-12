@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('url')->nullable();
+            $table->string('status')->default('draft');
+            $table->boolean('active')->default(false);
+            $table->foreignId('created_by')->constrained('users');
             $table->timestamps();
         });
     }
