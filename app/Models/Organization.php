@@ -16,7 +16,10 @@ class Organization extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'ein', // Employer Identification Number (EIN) is the brazillian CNPJ.
         'name',
+        'email',
+        'url',
     ];
 
     public function users(): BelongsToMany
