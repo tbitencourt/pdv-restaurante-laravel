@@ -23,7 +23,7 @@ Food Point of Sales System.
 
 ## Pending Tasks
 
-- Add company fields (ex: CNPJ) to Organization Model/migration
+- Add company fields (ex: CNPJ) to Organization Model/migration :white_check_mark:
 - Install Filament
 - Add multi-tenancy rules
 - Update register user page
