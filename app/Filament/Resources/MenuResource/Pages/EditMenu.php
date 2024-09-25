@@ -10,6 +10,11 @@ class EditMenu extends EditRecord
 {
     protected static string $resource = MenuResource::class;
 
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+
     protected function getHeaderActions(): array
     {
         return [

@@ -62,7 +62,7 @@ class AppPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->registration()
-            ->tenant(Organization::class, ownershipRelationship: 'createdBy')
+            ->tenant(Organization::class, ownershipRelationship: 'organization')
             ->tenantRegistration(RegisterOrganization::class)
             ->tenantProfile(EditOrganizationProfile::class);
     }

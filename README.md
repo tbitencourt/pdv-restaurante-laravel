@@ -26,7 +26,7 @@ Food Point of Sales System.
 - Add company fields (ex: CNPJ) to Organization Model/migration :white_check_mark:
 - Install Filament :white_check_mark:
 - Add multi-tenancy rules :white_check_mark:
-- Create Menu/MenuItem CRUD pages
+- Create Menu/MenuItem CRUD pages :white_check_mark:
 - Update Register user page to create organization too
 - Add Open/Close Store features
 - Add attendance flow pages

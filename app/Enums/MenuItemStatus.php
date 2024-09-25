@@ -11,9 +11,9 @@ enum MenuItemStatus: string
     public static function options(): array
     {
         return [
-            self::DRAFT->value => __('enums.draft'),
-            self::ACTIVE->value => __('enums.active'),
-            self::INACTIVE->value => __('enums.inactive'),
+            self::DRAFT->value => __('Draft'),
+            self::ACTIVE->value => __('Active'),
+            self::INACTIVE->value => __('Inactive'),
         ];
     }
 

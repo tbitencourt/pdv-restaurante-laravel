@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('menu_items', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('menu_id')->constrained('menus');
+            $table->foreignId('menu_id')->constrained('menus')->cascadeOnDelete();
             $table->string('name');
             $table->string('description')->nullable();
             $table->string('status')->default('draft');

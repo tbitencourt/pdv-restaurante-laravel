@@ -11,6 +11,16 @@ class MenuItem extends Model
 {
     use HasFactory;
 
+    public static function boot(): void
+    {
+        parent::boot();
+        if (auth()->user()) {
+            static::saving(function ($model) {
+                $model->created_by = auth()->id();
+            });
+        }
+    }
+
     /**
      * The attributes that are mass assignable.
      *
