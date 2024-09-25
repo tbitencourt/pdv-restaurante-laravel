@@ -4,7 +4,7 @@ Food Point of Sales System.
 
 ## Scope
 
-- Each restaurant client should access different date (SAAS).
+- Each restaurant client should access different data (SAAS).
 - There are 3 types of client roles: Client admin, Client staff, Client attendance
 
 ## User Cases
